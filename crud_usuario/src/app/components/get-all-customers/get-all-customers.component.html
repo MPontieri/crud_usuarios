@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="table-container">
+
+    <div class="header">
+      <h2>Clientes</h2>
+      <button class="btn-new" routerLink="/customer">+ Novo Cliente</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.nome}}</td>
+          <td>{{customer.email}}</td>
+          <td>{{customer.telefone}}</td>
+          <td>
+            <button class="btn-action edit" routerLink="/customer/{{customer.id}}">Editar</button>
+            <button class="btn-action delete"(click)="deleteCustomer(customer.id)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

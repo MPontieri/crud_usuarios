@@ -1,0 +1,112 @@
+/* Fundo geral */
+body {
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Caixa principal */
+.table-container {
+  width: 800px;
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #ffb300;
+}
+
+/* Botão novo */
+.btn-new {
+  background: linear-gradient(135deg, #ff9800, #ff6d00);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-new:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cabeçalho */
+thead {
+  background: #2a2a2a;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  color: #ffb300;
+}
+
+/* Linhas */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  color: #e0e0e0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Hover nas linhas */
+tbody tr:hover {
+  background: #2a2a2a;
+}
+
+/* Botões de ação */
+.btn-action {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+/* Editar */
+.btn-action.edit {
+  background: #ff9800;
+  color: #121212;
+}
+
+.btn-action.edit:hover {
+  background: #ffb74d;
+}
+
+/* Excluir */
+.btn-action.delete {
+  background: #e53935;
+  color: #fff;
+}
+
+.btn-action.delete:hover {
+  background: #ef5350;
+}
